@@ -20,6 +20,12 @@ arduino-cli core install arduino:avr
 # Display information about an Arduino board, such as the UNO R3
 arduino-cli board details -b arduino:avr:uno
 
+# Search for libraries
+arduino-cli lib search ina219
+
+@ Install library
+arduino-cli lib install "Adafruit INA219"
+
 # Create a new sketch named "HelloWorld" in the current directory
 # Will create HelloWorld/HelloWorld.ino with empty setup() and loop() functions
 arduino-cli sketch new HelloWorld
@@ -29,6 +35,9 @@ arduino-cli compile --fqbn arduino:avr:uno HelloWorld
 
 # Flash the "HelloWorld" sketch to the Arduino UNO R3 board connected to /dev/ttyACM0
 arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno HelloWorld
+
+# Compile and upload the "HelloWorld" sketch to the Arduino UNO R3 board in one step
+arduino-cli compile --fqbn arduino:avr:uno --port /dev/ttyACM0 --upload HelloWorld
 
 # Monitor the serial output from the Arduino UNO R3 board connected to /dev/ttyACM0 with a baud rate of 9600
 arduino-cli monitor -p /dev/ttyACM0 --config baudrate=9600
