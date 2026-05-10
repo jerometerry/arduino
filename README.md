@@ -10,6 +10,8 @@ I have my UNO R3 attached to a breadboard on my workbench (aka my dinging room t
 
 Since I have recently added a Raspberry PI 5 to my DIY kit, I keep the Raspberry PI on the side of my workbench, and connect the UNO to the Raspberry PI. I have my Raspberry PI configured as a headless server, and I connect to it over SSH from my laptop, using an SSH key. I use the Arduino CLI from my Raspberry PI to upload sketches to the UNO R3.
 
+<img width="4032" height="3024" alt="IMG_3852" src="https://github.com/user-attachments/assets/f1d6968c-0344-48d5-820b-90b9afda25f7" />
+
 ## Installing Arduino CLI
 
 Setting up the Arduino CLI was painless, using the [install script](https://github.com/arduino/arduino-cli/blob/master/install.sh) from the [arduino-cli repository](https://github.com/arduino/arduino-cli).
