@@ -145,7 +145,7 @@ I experimented with the starter kit and examples directly on my laptop using the
 
 Arduino maintains a list of libraries that people submit for working with Arduino modules. The arduino-cli has commands for searching, installing and updating these libraries.
 
-For example, I was experimenting with the INA219 Current Sensor module and I needed a library. I ran `rduino-cli lib search ina219` to search for matching libraries. There were many different versions available, and it wasn't immediately obvious which one I should choose. I Googled these libraries adn eventually decided to go with the Adafruit version. I installed that library using the command `arduino-cli lib install "Adafruit INA219"`.
+For example, I was experimenting with the INA219 Current Sensor module and I needed a library. I ran `arduino-cli lib search ina219` to search for matching libraries. There were many different versions available, and it wasn't immediately obvious which one I should choose. I Googled these libraries adn eventually decided to go with the Adafruit version. I installed that library using the command `arduino-cli lib install "Adafruit INA219"`.
 
 ## Viewing the Serial Console
 
